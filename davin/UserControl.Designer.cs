@@ -1,0 +1,105 @@
+﻿namespace Davin
+{
+    partial class UserControl
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl));
+            this.btnInput_Data = new System.Windows.Forms.Button();
+            this.btnLihat_Data = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // btnInput_Data
+            // 
+            this.btnInput_Data.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInput_Data.Location = new System.Drawing.Point(38, 304);
+            this.btnInput_Data.Name = "btnInput_Data";
+            this.btnInput_Data.Size = new System.Drawing.Size(400, 50);
+            this.btnInput_Data.TabIndex = 0;
+            this.btnInput_Data.Text = "INPUT DATA";
+            this.btnInput_Data.UseVisualStyleBackColor = true;
+            this.btnInput_Data.Click += new System.EventHandler(this.btnInput_Data_Click);
+            // 
+            // btnLihat_Data
+            // 
+            this.btnLihat_Data.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLihat_Data.Location = new System.Drawing.Point(40, 384);
+            this.btnLihat_Data.Name = "btnLihat_Data";
+            this.btnLihat_Data.Size = new System.Drawing.Size(400, 50);
+            this.btnLihat_Data.TabIndex = 1;
+            this.btnLihat_Data.Text = "LIHAT DATA";
+            this.btnLihat_Data.UseVisualStyleBackColor = true;
+            this.btnLihat_Data.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Location = new System.Drawing.Point(40, 464);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(400, 50);
+            this.btnLogout.TabIndex = 2;
+            this.btnLogout.Text = "LOGOUT";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(96, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(288, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // UserControl
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(484, 561);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnLogout);
+            this.Controls.Add(this.btnLihat_Data);
+            this.Controls.Add(this.btnInput_Data);
+            this.Name = "UserControl";
+            this.Text = "UserControl";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button btnInput_Data;
+        private System.Windows.Forms.Button btnLihat_Data;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.PictureBox pictureBox1;
+    }
+}
