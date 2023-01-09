@@ -34,9 +34,11 @@ namespace Davin
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            Login f = Application.OpenForms.OfType<Login>().FirstOrDefault();
+            Application.Exit();
+
+        /*    Login f = Application.OpenForms.OfType<Login>().FirstOrDefault();
             if (f != null) f.Show();
-            this.Hide();
+            this.Hide(); */
         }
     }
 }

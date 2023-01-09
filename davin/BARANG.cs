@@ -86,7 +86,8 @@ namespace Davin
         public DataTable LihatData()
         {
             DataTable table = new DataTable();
-            table = db.getData("SELECT * FROM `datainventaris`", null);
+            table = db.getData("SELECT `id` as `Id`,`nama_barang` as `Nama Barang`, `kategori` as `Kategori`, `tanggal_masuk` as `Tanggal Masuk`," +
+                " `tanggal_keluar` as `Tanggal Keluar`, `jumlah_barang` as `Jumlah Barang` FROM `datainventaris`", null);
 
             return table;
         }

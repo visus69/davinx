@@ -133,5 +133,32 @@ namespace Davin
                 MessageBox.Show(ex.Message, "Invalid ID");
             }
         }
+
+        private void InputBarang_Load(object sender, EventArgs e)
+        {
+            dgBarang.Columns.Add("Column1", "no");
+
+            dgBarang.DataSource = barang.LihatData();
+            for (int i = 0; i < dgBarang.Rows.Count; i++)
+            {
+                dgBarang.Rows[i].Cells[0].Value = i + 1;
+            }
+
+            dgBarang.ColumnHeadersDefaultCellStyle.ForeColor = Color.Blue;
+            dgBarang.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Arial", 14, FontStyle.Bold);
+            dgBarang.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgBarang.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgBarang.EnableHeadersVisualStyles = false;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgBarang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

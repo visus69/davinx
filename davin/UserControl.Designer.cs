@@ -39,9 +39,9 @@
             // btnInput_Data
             // 
             this.btnInput_Data.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInput_Data.Location = new System.Drawing.Point(38, 304);
+            this.btnInput_Data.Location = new System.Drawing.Point(752, 472);
             this.btnInput_Data.Name = "btnInput_Data";
-            this.btnInput_Data.Size = new System.Drawing.Size(400, 50);
+            this.btnInput_Data.Size = new System.Drawing.Size(400, 100);
             this.btnInput_Data.TabIndex = 0;
             this.btnInput_Data.Text = "INPUT DATA";
             this.btnInput_Data.UseVisualStyleBackColor = true;
@@ -50,9 +50,9 @@
             // btnLihat_Data
             // 
             this.btnLihat_Data.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLihat_Data.Location = new System.Drawing.Point(40, 384);
+            this.btnLihat_Data.Location = new System.Drawing.Point(752, 624);
             this.btnLihat_Data.Name = "btnLihat_Data";
-            this.btnLihat_Data.Size = new System.Drawing.Size(400, 50);
+            this.btnLihat_Data.Size = new System.Drawing.Size(400, 100);
             this.btnLihat_Data.TabIndex = 1;
             this.btnLihat_Data.Text = "LIHAT DATA";
             this.btnLihat_Data.UseVisualStyleBackColor = true;
@@ -60,21 +60,23 @@
             // 
             // btnLogout
             // 
+            this.btnLogout.BackColor = System.Drawing.Color.Red;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.Location = new System.Drawing.Point(40, 464);
+            this.btnLogout.Location = new System.Drawing.Point(752, 760);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(400, 50);
+            this.btnLogout.Size = new System.Drawing.Size(400, 100);
             this.btnLogout.TabIndex = 2;
-            this.btnLogout.Text = "LOGOUT";
-            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Text = "EXIT";
+            this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(96, 32);
+            this.pictureBox1.Location = new System.Drawing.Point(760, 160);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(288, 200);
+            this.pictureBox1.Size = new System.Drawing.Size(384, 272);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -83,7 +85,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 561);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnLihat_Data);

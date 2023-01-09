@@ -94,7 +94,7 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Name = "Login";
-            this.Text = "Form1";
+            this.Text = "Login";
             this.MouseHover += new System.EventHandler(this.Login_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
