@@ -20,6 +20,15 @@ namespace Davin
         }
 
         BARANG barang = new BARANG();
+        public void nomor()
+        {
+            dgBarang.DataSource = null;
+            dgBarang.DataSource = barang.LihatData();
+            /*for (int i = 0; i < dgBarang.Rows.Count; i++)
+            {
+                dgBarang.Rows[i].Cells[0].Value = i + 1;
+            }*/
+        }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -34,11 +43,15 @@ namespace Davin
             DateTime tanggal_keluar = dtKeluar.Value;
             int jumlah_barang = Convert.ToInt32(Math.Round(numJumlah_Barang.Value, 0));
            
-
+            
             if (nama_barang.Trim().Equals("") || kategori.Trim().Equals("") || (jumlah_barang < 1))
             {
                 MessageBox.Show("Isi data dengan benar!", "Ada kolom yang belum terisi.", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+            } 
+            else if (tanggal_keluar < tanggal_masuk)
+            {
+                MessageBox.Show("Tanggal keluar salah", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -50,7 +63,8 @@ namespace Davin
                     MessageBox.Show("Data gagal diinput", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
+            
+            nomor();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -88,6 +102,8 @@ namespace Davin
                                     MessageBoxIcon.Error);
                     }
                 }
+                nomor();
+                
             }
             catch (Exception ex)
             {
@@ -99,6 +115,7 @@ namespace Davin
             UserControl c = Application.OpenForms.OfType<UserControl>().FirstOrDefault();
             if (c != null) c.Show();
             this.Hide();
+            
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -132,19 +149,13 @@ namespace Davin
             {
                 MessageBox.Show(ex.Message, "Invalid ID");
             }
+            nomor();
         }
 
         private void InputBarang_Load(object sender, EventArgs e)
         {
-            dgBarang.Columns.Add("Column1", "no");
 
             dgBarang.DataSource = barang.LihatData();
-            for (int i = 0; i < dgBarang.Rows.Count; i++)
-            {
-                dgBarang.Rows[i].Cells[0].Value = i + 1;
-            }
-
-            dgBarang.ColumnHeadersDefaultCellStyle.ForeColor = Color.Blue;
             dgBarang.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Arial", 14, FontStyle.Bold);
             dgBarang.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgBarang.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -159,6 +170,25 @@ namespace Davin
         private void dgBarang_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgBarang_ColumnHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            
+        }
+
+        private void dgBarang_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+           
+            for (int i = 0; i < dgBarang.Rows.Count; i++)
+            {
+                dgBarang.Rows[i].Cells[0].Value = i + 1;
+            }
         }
     }
 }

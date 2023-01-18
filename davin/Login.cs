@@ -85,19 +85,10 @@ namespace Davin
 
         private void Login_MouseHover(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "")
-            {
-                txtUsername.Text = "Username";
-                txtUsername.ForeColor = Color.Gray;
-            }
+           
 
 
-            if (txtPassword.Text == "")
-            {
-                txtPassword.Text = "Password";
-                txtPassword.ForeColor = Color.Gray;
-                txtPassword.UseSystemPasswordChar = false;
-            }
+            
         }
 
         private void txtUsername_Click(object sender, EventArgs e)
@@ -117,6 +108,29 @@ namespace Davin
                 txtPassword.ForeColor = Color.Black;
                 txtPassword.UseSystemPasswordChar = true;
             }
+        }
+
+        private void txtUsername_MouseLeave(object sender, EventArgs e)
+        {
+            if (txtUsername.Text == "")
+            {
+                txtUsername.Text = "Username";
+                txtUsername.ForeColor = Color.Gray;
+            }
+        }
+
+        private void txtPassword_MouseLeave(object sender, EventArgs e)
+        {
+            if (txtPassword.Text == "")
+            {
+                txtPassword.Text = "Password";
+                txtPassword.ForeColor = Color.Gray;
+                txtPassword.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
         }
     }
 }

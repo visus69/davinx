@@ -38,31 +38,36 @@
             // 
             // btnInput_Data
             // 
+            this.btnInput_Data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(102)))), ((int)(((byte)(86)))));
             this.btnInput_Data.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInput_Data.Location = new System.Drawing.Point(752, 472);
+            this.btnInput_Data.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(247)))), ((int)(((byte)(207)))));
+            this.btnInput_Data.Location = new System.Drawing.Point(752, 488);
             this.btnInput_Data.Name = "btnInput_Data";
             this.btnInput_Data.Size = new System.Drawing.Size(400, 100);
             this.btnInput_Data.TabIndex = 0;
             this.btnInput_Data.Text = "INPUT DATA";
-            this.btnInput_Data.UseVisualStyleBackColor = true;
+            this.btnInput_Data.UseVisualStyleBackColor = false;
             this.btnInput_Data.Click += new System.EventHandler(this.btnInput_Data_Click);
             // 
             // btnLihat_Data
             // 
+            this.btnLihat_Data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(102)))), ((int)(((byte)(86)))));
             this.btnLihat_Data.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLihat_Data.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(247)))), ((int)(((byte)(207)))));
             this.btnLihat_Data.Location = new System.Drawing.Point(752, 624);
             this.btnLihat_Data.Name = "btnLihat_Data";
             this.btnLihat_Data.Size = new System.Drawing.Size(400, 100);
             this.btnLihat_Data.TabIndex = 1;
             this.btnLihat_Data.Text = "LIHAT DATA";
-            this.btnLihat_Data.UseVisualStyleBackColor = true;
+            this.btnLihat_Data.UseVisualStyleBackColor = false;
             this.btnLihat_Data.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnLogout
             // 
-            this.btnLogout.BackColor = System.Drawing.Color.Red;
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(102)))), ((int)(((byte)(86)))));
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.Location = new System.Drawing.Point(752, 760);
+            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(247)))), ((int)(((byte)(207)))));
+            this.btnLogout.Location = new System.Drawing.Point(752, 776);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(400, 100);
             this.btnLogout.TabIndex = 2;
@@ -92,6 +97,7 @@
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnLihat_Data);
             this.Controls.Add(this.btnInput_Data);
+            this.DoubleBuffered = true;
             this.Name = "UserControl";
             this.Text = "UserControl";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
